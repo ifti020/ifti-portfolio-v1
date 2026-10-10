@@ -6,6 +6,7 @@ import Footer from "./component/Footer.tsx";
 import Hero from "./component/Hero.tsx";
 import Skills from "./component/Skills.tsx";
 import About from "./component/About.tsx";
+import Projects from "./component/Projects.tsx";
 
 function App() {
     // Theme state: default is light mode.
@@ -27,6 +28,7 @@ function App() {
             <Hero/>
             <About/>
             <Skills />
+            <Projects />
 
         </main>
         <Footer/>
