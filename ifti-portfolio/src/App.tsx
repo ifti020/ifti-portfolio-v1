@@ -9,6 +9,7 @@ import About from "./component/About.tsx";
 import Projects from "./component/Projects.tsx";
 import Achievements from "./component/Achievements.tsx";
 import Extracurricular from "./component/Extracurricular.tsx";
+import Contact from "./component/Contact.tsx";
 
 function App() {
     // Theme state: default is light mode.
@@ -33,6 +34,7 @@ function App() {
             <Projects />
             <Achievements/>
             <Extracurricular />
+            <Contact/>
 
         </main>
         <Footer/>
