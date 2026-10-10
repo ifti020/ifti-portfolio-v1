@@ -41,7 +41,7 @@ const Hero: React.FC = () => {
                         src={personalData.imageUrl}
                         alt={personalData.name}
                         className="img-fluid rounded-circle shadow-lg"
-                        style={{width: '350px', height: '350px', objectFit: 'cover'}}
+                        style={{width: '300px', height: '300px', objectFit: 'cover'}}
                     />
                 </div>
 
