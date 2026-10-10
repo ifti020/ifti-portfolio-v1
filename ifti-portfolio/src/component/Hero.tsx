@@ -5,8 +5,10 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa';
 const Hero: React.FC = () => {
     return (
         <section id="hero" className="min-vh-100 d-flex align-items-center">
-            <div className="row w-100">
-                <div className="col-lg-8">
+            <div className="row w-100 flex-column-reverse flex-lg-row">
+
+                {/* Text Section */}
+                <div className="col-lg-8 mt-5 mt-lg-0">
                     <h5 className="text-muted mb-3">Hi, I'm</h5>
                     <h1 className="display-3 fw-bold mb-3">{personalData.name}</h1>
                     <h2 className="text-secondary mb-4">{personalData.role}</h2>
@@ -31,12 +33,9 @@ const Hero: React.FC = () => {
                         </a>
                     </div>
                 </div>
-                <div className="col-lg-4 d-none d-lg-flex align-items-center justify-content-center">
-                    {/* UPLOAD_YOUR_IMAGE_HERE: Place your profile picture here */}
-                    {/* <img src="/images/profile/my-image.jpg" alt="Ifti Haque" className="img-fluid rounded-circle shadow-lg" style={{width: '300px', height: '300px', objectFit: 'cover'}} /> */}
-                    {/*<div className="bg-secondary rounded-circle d-flex align-items-center justify-content-center text-white shadow-lg" style={{width: '300px', height: '300px', opacity: 0.1}}>*/}
-                    {/*   Image Placeholder*/}
-                    {/*</div>*/}
+
+                {/* Image Section */}
+                <div className="col-lg-4 d-flex align-items-center justify-content-center">
                     <img
                         src={personalData.imageUrl}
                         alt={personalData.name}
@@ -44,6 +43,7 @@ const Hero: React.FC = () => {
                         style={{width: '350px', height: '350px', objectFit: 'cover'}}
                     />
                 </div>
+
             </div>
         </section>
     );
