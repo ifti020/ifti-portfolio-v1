@@ -7,6 +7,7 @@ import Hero from "./component/Hero.tsx";
 import Skills from "./component/Skills.tsx";
 import About from "./component/About.tsx";
 import Projects from "./component/Projects.tsx";
+import Achievements from "./component/Achievements.tsx";
 
 function App() {
     // Theme state: default is light mode.
@@ -29,6 +30,7 @@ function App() {
             <About/>
             <Skills />
             <Projects />
+            <Achievements/>
 
         </main>
         <Footer/>
