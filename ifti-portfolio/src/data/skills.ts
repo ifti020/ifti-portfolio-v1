@@ -1,5 +1,5 @@
 export const skillsData = {
-    languages: ["Java", "C++", "C", "JavaScript", "TypeScript", "SQL"],
+    languages: ["Java", "C++", "C", "JavaScript(ES6+)", "TypeScript", "SQL"],
     backend: ["Spring Boot", "Spring Framework", "Spring Data JPA", "Spring Security", "REST APIs", "CRUD Operations"],
     frontend: ["React", "HTML5", "CSS3", "Bootstrap"],
     databases: ["PostgreSQL", "MySQL"],
