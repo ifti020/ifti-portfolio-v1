@@ -10,5 +10,5 @@ export const personalData = {
     linkedin: "https://www.linkedin.com/in/ifti-haque-282b1a2b3",
     // UPLOAD_YOUR_IMAGE_HERE: Add your CV pdf file to public/resume/Ifti-Haque-CV.pdf
     imageUrl: "/images/profile/my-image.png",
-    resumeUrl: "/resume/Ifti-Haque-CV.pdf"
+    resumeUrl: "/resume/Ifti_Haque_CV_Jr_Software_Engineer.pdf"
 };

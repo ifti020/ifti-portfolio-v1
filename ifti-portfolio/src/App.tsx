@@ -3,6 +3,7 @@ import './App.css'
 import {useEffect, useState} from "react";
 import Navbar from "./component/Navbar.tsx";
 import Footer from "./component/Footer.tsx";
+import Hero from "./component/Hero.tsx";
 
 function App() {
     // Theme state: default is light mode.
@@ -20,7 +21,10 @@ function App() {
   return (
     <>
         <Navbar theme={theme} toggleTheme={toggleTheme} />
+        <main className="container">
+            <Hero/>
 
+        </main>
         <Footer/>
     </>
   )
