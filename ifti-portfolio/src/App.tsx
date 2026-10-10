@@ -1,12 +1,24 @@
 // import { useState } from 'react'
 import './App.css'
+import {useEffect, useState} from "react";
+import Navbar from "./component/Navbar.tsx";
 
 function App() {
-  // const [count, setCount] = useState(0)
+    // Theme state: default is light mode.
+    const [theme, setTheme] = useState<'light' | 'dark'>('light');
+
+    // Effect to toggle Bootstrap's native dark mode attribute
+    useEffect(() => {
+        document.documentElement.setAttribute('data-bs-theme', theme);
+    }, [theme]);
+
+    const toggleTheme = () => {
+        setTheme(theme === 'light' ? 'dark' : 'light');
+    };
 
   return (
     <>
-     Ifti's Portfolio Loading...
+        <Navbar theme={theme} toggleTheme={toggleTheme} />
     </>
   )
 }
