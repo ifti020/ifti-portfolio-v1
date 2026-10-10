@@ -5,6 +5,7 @@ import Navbar from "./component/Navbar.tsx";
 import Footer from "./component/Footer.tsx";
 import Hero from "./component/Hero.tsx";
 import Skills from "./component/Skills.tsx";
+import About from "./component/About.tsx";
 
 function App() {
     // Theme state: default is light mode.
@@ -24,6 +25,7 @@ function App() {
         <Navbar theme={theme} toggleTheme={toggleTheme} />
         <main className="container">
             <Hero/>
+            <About/>
             <Skills />
 
         </main>
