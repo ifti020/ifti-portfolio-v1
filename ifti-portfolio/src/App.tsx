@@ -8,6 +8,7 @@ import Skills from "./component/Skills.tsx";
 import About from "./component/About.tsx";
 import Projects from "./component/Projects.tsx";
 import Achievements from "./component/Achievements.tsx";
+import Extracurricular from "./component/Extracurricular.tsx";
 
 function App() {
     // Theme state: default is light mode.
@@ -31,6 +32,7 @@ function App() {
             <Skills />
             <Projects />
             <Achievements/>
+            <Extracurricular />
 
         </main>
         <Footer/>
