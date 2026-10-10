@@ -1,0 +1,31 @@
+/* Global Styles for Minimal & Clean Look */
+:root {
+    --primary-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --transition-speed: 0.3s;
+}
+
+body {
+    font-family: var(--primary-font);
+    transition: background-color var(--transition-speed) ease, color var(--transition-speed) ease;
+    scroll-behavior: smooth;
+}
+
+/* Card Hover Effect - Professional and subtle */
+.hover-card {
+    transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+}
+
+.hover-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+[data-bs-theme="dark"] .hover-card:hover {
+    box-shadow: 0 10px 20px rgba(255,255,255,0.05);
+}
+
+/* Navbar adjustment for single page smooth scroll */
+section {
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
