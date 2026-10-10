@@ -5,10 +5,11 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa';
 const Hero: React.FC = () => {
     return (
         <section id="hero" className="min-vh-100 d-flex align-items-center">
-            <div className="row w-100 flex-column-reverse flex-lg-row">
+            {/* flex-column-reverse বাদ দিয়ে নরমাল row রাখা হলো */}
+            <div className="row w-100 align-items-center">
 
-                {/* Text Section */}
-                <div className="col-lg-8 mt-5 mt-lg-0">
+                {/* Text Section: মোবাইলে ২ নাম্বারে (order-2) এবং ল্যাপটপে ১ নাম্বারে (order-lg-1) দেখাবে */}
+                <div className="col-12 col-lg-8 order-2 order-lg-1 mt-5 mt-lg-0">
                     <h5 className="text-muted mb-3">Hi, I'm</h5>
                     <h1 className="display-3 fw-bold mb-3">{personalData.name}</h1>
                     <h2 className="text-secondary mb-4">{personalData.role}</h2>
@@ -34,8 +35,8 @@ const Hero: React.FC = () => {
                     </div>
                 </div>
 
-                {/* Image Section */}
-                <div className="col-lg-4 d-flex align-items-center justify-content-center">
+                {/* Image Section: মোবাইলে ১ নাম্বারে (order-1) এবং ল্যাপটপে ২ নাম্বারে (order-lg-2) দেখাবে */}
+                <div className="col-12 col-lg-4 order-1 order-lg-2 d-flex align-items-center justify-content-center mb-5 mb-lg-0">
                     <img
                         src={personalData.imageUrl}
                         alt={personalData.name}
