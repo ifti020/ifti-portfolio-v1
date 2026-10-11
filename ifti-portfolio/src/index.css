@@ -29,3 +29,56 @@ section {
     padding-top: 80px;
     padding-bottom: 40px;
 }
+.back-to-top {
+    background-color: #0F766E;
+    color: #FFFFFF;
+
+    position: fixed;
+    right: 20px;
+    bottom: calc(20px + env(safe-area-inset-bottom));
+
+    width: 48px;
+    height: 48px;
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 4px 14px rgb(0 0 0 / 18%);
+    z-index: 1030;
+
+    cursor: pointer;
+
+    transition:
+            background-color 200ms ease,
+            transform 200ms ease,
+            box-shadow 200ms ease;
+}
+
+.back-to-top:hover {
+    background-color: #115E59;
+    transform: translateY(-3px);
+    box-shadow: 0 7px 18px rgb(0 0 0 / 22%);
+}
+
+.back-to-top:focus-visible {
+    outline: 3px solid #14B8A6;
+    outline-offset: 4px;
+}
+
+.back-to-top:active {
+    transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .back-to-top {
+        transition: none;
+    }
+
+    .back-to-top:hover {
+        transform: none;
+    }
+}
