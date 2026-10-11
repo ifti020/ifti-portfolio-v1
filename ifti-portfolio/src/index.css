@@ -85,15 +85,25 @@ section {
 
 @media screen and (max-width: 576px) {
     .back-to-top {
-        background-color: rgba(15, 118, 110, 0.25) !important;
+        width: 44px;
+        height: 44px;
 
-        -webkit-backdrop-filter: blur(6px);
-        backdrop-filter: blur(6px);
+        right: 14px;
+        bottom: calc(14px + env(safe-area-inset-bottom));
+
+        background-color: rgba(15, 118, 110, 0.35);
+
+        -webkit-backdrop-filter: blur(10px) saturate(140%);
+        backdrop-filter: blur(10px) saturate(140%);
 
         border: 1px solid rgba(255, 255, 255, 0.35);
+
+        box-shadow:
+                0 2px 8px rgba(0, 0, 0, 0.12),
+                inset 0 1px 1px rgba(255, 255, 255, 0.18);
     }
 
     .back-to-top:hover {
-        background-color: rgba(15, 118, 110, 0.4) !important;
+        background-color: rgba(15, 118, 110, 0.5);
     }
 }
