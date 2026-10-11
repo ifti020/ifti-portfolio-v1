@@ -82,3 +82,18 @@ section {
         transform: none;
     }
 }
+
+@media screen and (max-width: 576px) {
+    .back-to-top {
+        background-color: rgba(15, 118, 110, 0.25) !important;
+
+        -webkit-backdrop-filter: blur(6px);
+        backdrop-filter: blur(6px);
+
+        border: 1px solid rgba(255, 255, 255, 0.35);
+    }
+
+    .back-to-top:hover {
+        background-color: rgba(15, 118, 110, 0.4) !important;
+    }
+}
